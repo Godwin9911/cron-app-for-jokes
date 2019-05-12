@@ -29,4 +29,6 @@ const j = schedule.scheduleJob('0 17 ? * 0,4-6', () => {
     .catch((error) => console.log(error))
 })
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`Server running at port `+port);
+})
