@@ -5,7 +5,7 @@ const accountSid = process.env.ACCOUNT_SID;
 const authoToken = process.env.AUTH_TOKEN;
 const client = require('twilio')(accountSid, authoToken);
 const express = require('express');
-const schedule = require('node-schedule-tz');
+const schedule = require('node-schedule');
 require('es6-promise').polyfill();
 require('isomorphic-fetch');//use nodefetch
 
