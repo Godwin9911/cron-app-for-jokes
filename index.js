@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'development') {
     require('dotenv').config();
   }
 const accountSid = process.env.ACCOUNT_SID;
