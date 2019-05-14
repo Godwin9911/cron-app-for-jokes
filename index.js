@@ -12,7 +12,7 @@ require('isomorphic-fetch');//use nodefetch
 const app = express()
 const port = process.env.PORT || 3000
       
-//cron job for 8 am everyday
+//cron job for 6 am everyday, server time
 const j = schedule.scheduleJob('0 18 * * *', () => {
     //get random jokes from Api
     fetch('https://api.chucknorris.io/jokes/random')
