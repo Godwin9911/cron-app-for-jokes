@@ -13,7 +13,7 @@ const app = express()
 const port = process.env.PORT || 3000
       
 //cron job for 8 am everyday
-const j = schedule.scheduleJob('0 17 ? * 0,4-6', () => {
+const j = schedule.scheduleJob('*/5 * * * *', () => {
     //get random jokes from Api
     fetch('https://api.chucknorris.io/jokes/random')
     .then(res => res.json())
