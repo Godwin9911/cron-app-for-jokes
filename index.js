@@ -30,5 +30,5 @@ const j = schedule.scheduleJob('*/2 * * * *', () => {
 })
 
 app.listen(port, () => {
-  console.log(`Server running at port` ${port});
+  console.log(`Server running at port ${port}`);
 })
